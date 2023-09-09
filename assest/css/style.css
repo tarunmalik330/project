@@ -8,7 +8,7 @@
   height: 150px;
   background: linear-gradient(to bottom right, red, yellow);
   position: relative;
-  border-radius: 15px 50px 30px;
+  border-radius: 15px 50px 30px 5px;
   animation: mymove 5s infinite;
 }
 .box {
@@ -20,7 +20,7 @@
   animation: mymove 5s infinite;
 }
 .hlo-box {
-  width: 600px;
+  width: 400px;
   height: 200px;
   background: linear-gradient(to bottom right, red, yellow);
   position: relative;
@@ -37,6 +37,20 @@
 .anime {
   animation: anime 5s infinite;
   position: relative;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom right, red, black);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom right, red, black);
 }
 h1 {
   color: white;
@@ -59,12 +73,12 @@ h1 {
   }
   25% {
     top: 0px;
-    left: 200px;
+    left: 100px;
     background: linear-gradient(to bottom right, red, black);
   }
   50% {
     top: 400px;
-    left: 300px;
+    left: 100px;
     background: linear-gradient(to bottom right, gray, yellow);
   }
   75% {
@@ -103,7 +117,7 @@ h1 {
   }
   25% {
     top: 0px;
-    left: 200px;
+    left: 100px;
     /* background: linear-gradient(to bottom right, red, black); */
   }
   50% {
